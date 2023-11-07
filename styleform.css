@@ -1,0 +1,39 @@
+body{
+    background:url("/images/secbg.png");
+   
+    height:100vh;
+    color:white;
+    text-align:center;
+   
+   
+}
+h3{
+    margin-bottom:3px;
+}
+#form1{
+    display:flex;
+    flex-direction: column;
+    width:300px;
+   text-align: center;
+   margin:auto;
+   margin-top:0px;
+}
+#reg{
+    margin-top:0px;
+    width:200px;
+    margin:auto;
+}
+#log{
+    width:200px;
+    margin:auto;
+}
+
+
+/* #form3{
+    display:flex;
+    flex-direction:column;
+    width:300px;
+   text-align: center;
+   margin:auto;
+} */
+

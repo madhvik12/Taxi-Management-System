@@ -1,0 +1,835 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.main-container{
+    width: 100vw; 
+    height: 100vh;
+    background: url(images/background.jpg);
+    background-size:100vw 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    padding: 2rem 7%;
+    align-items: top;
+    position: fixed;
+    top: 20px;
+    z-index:5;
+
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    padding: 10px;
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+    height: 50px;
+
+}
+.header .navbar h2{
+  font-size: 1.7rem;
+    padding: 15px;
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+    height: 50px;
+    margin-right:20px;
+    
+}
+.header .navbar h2:hover{
+  background: #ffc61a;
+    padding: .5rem 3rem;
+    border-radius: 15px;
+}
+.header .navbar form {
+  font-size: 1.7rem;
+  padding: 10px;
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  
+ 
+}
+.header .navbar form button{
+  /* font-size: 1.7rem;
+  padding: 10px;
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  height: 50px; */
+  background-color:inherit;
+  color:white;
+  border:none;
+ margin-right:4px;
+ 
+ 
+}
+.header .navbar a:hover{
+    background: #ffc61a;
+    padding: .5rem 3rem;
+    border-radius: 15px;
+}
+.header .navbar button:hover{
+  background: #ffc61a;
+  padding: .5rem 3rem;
+  border-radius: 15px;
+  
+}
+.main-container::before{
+    content: "";
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        }
+#menu-bars{
+    color: white;
+    font-size: 2rem;
+    display: none;
+
+}
+.navbar {
+    margin: auto;
+    width: 100%;
+    padding-top: 18px;
+    padding-right: 5px;
+    background-color:rgb(0,0,0,0.6);
+    /* background-color: blue; */
+    display:flex ;
+    justify-content:space-around;
+}
+/* .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    
+    background-color: inherit;
+    font-family: inherit; 
+    
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+ 
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /
+  .dropdown-content a:hover {
+    background-color: black;
+  }
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  } */
+
+.navbar.active{
+    top: 10%;
+}
+
+.background-text h2{
+    /* color: white; */
+    /* font-size: 50px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    color:white;
+
+    font-family: "Poppins", sans-serif;
+
+}
+.background-text h3 span{
+    color: #ffc61a;
+}
+.taxi-image{
+    width: 50%;
+    margin: 0 auto;
+}
+.taxi-image img{
+    width: 100%;
+    margin-top: 260px;
+}
+.home-container{
+    background: #ffc61a;
+    padding: 2rem 7%;
+    width: 100%;
+    padding-top: 4rem;
+    
+}
+.home-content{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.heading{
+  display:flex;
+  flex-direction: column;
+}
+.heading h1{
+  margin-top:20px;
+}
+.inner-content{
+     display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #ffc61a;
+    width:100vw;
+    
+    padding: 2rem;
+}
+.inner-content h3{
+    font-size: 31px;
+}
+.inner-content h2{
+    font-size: 38px;
+}
+.inner-content p{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.inner-content .booknow{
+    
+    color: black;
+    font-size: 1.5rem;
+    border: 3px solid black;
+    border-radius:4px;
+    margin-top: 10px;;
+    width:100px;
+    height: 30px;;
+}
+.inner-content .booknow:hover{
+
+border: 1px solid white;
+border-radius: 15px;
+background: white;
+}
+.form-heading{
+    text-align: center;
+    background: black;
+    padding: 2rem 0;
+}
+.form-heading h1{
+    color: white;
+}
+.contact-form{
+    width: 45rem;
+    background: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+.form-fields{
+  display:flex;
+  flex-direction: column;
+  width:300px;
+  height:500px;
+}
+.form-fields input{
+    padding: 2rem ;
+    border: 4px solid black;
+    font-size:10px;
+    margin:5px;
+
+    
+}
+.form-fields button{
+  background: black;
+    width: 100%;
+    display: inline-block;
+    padding: 2rem 0;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+.contact-form button{
+    background: black;
+    width: 100%;
+    display: inline-block;
+    padding: 2rem 0;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+.submit{
+    padding-top: 2rem;
+    margin-top:4px;
+
+}
+.main-tariff{
+    padding: 3rem 7%;
+   
+   
+}
+.about .content h3 {
+    font-weight: 700;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    padding: 0 0 8px 26px;
+    position: relative;
+  }
+  
+  .about .content ul i {
+    position: absolute;
+    font-size: 20px;
+    left: 0;
+    top: -3px;
+    color: #ffc451;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  .about{
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+  }
+
+/* .about .content h3 {
+    margin-left: 45%;
+    margin-right: 15%;
+    margin-right: 5%;
+    font-weight: 700;
+   
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    margin-top: 30px;
+    font-weight: 300;
+    padding: 0;
+    margin-right: 10%;
+  }
+  
+  .about .content ul li {
+    padding: 0 0 8px 26px;
+    margin-top: 10px;
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 45%;
+    margin-right: 10%;
+  }
+  
+  .about .content ul i {
+    position: absolute;
+    margin-top: 50%;
+    font-size: 100px;
+    left: 0;
+    top: -3px;
+    color: #ffc451;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+    margin-left: 45%;
+    margin-right: 15%;
+    font-size: 20px;
+   margin-top: 25px;
+  }
+   */
+
+
+.main-tariff h1{
+    font-size: 38px;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+.main-tariff h1 span{
+    color: #ffc61a;
+}
+.inner-tarrif{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.tarrif-container{
+    flex: 1 1 250px;
+    text-align: center;
+    padding: 3rem 0;
+}
+.tarrif-container img{
+    width: 60%;
+    margin-top: -50px;
+}
+.tarrif-container .inner-box h2{
+    font-size: 30px;
+}
+.tarrif-container .inner-box p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.tarrif-container .inner-box h3{
+    color: #ffc61a;
+    font-size: 2rem;
+}
+.tarrif-container .inner-box a{
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+
+}
+.tarrif-container:nth-child(2){
+    background: #ffc61a;
+}
+.heading-yellow{
+    color: black;
+}
+.yellw-section{
+    color: black !important;
+}
+.tarrif-container a{
+    color: white;
+    padding: 1rem 3rem;
+    background: black;
+    display: inline-block;
+    margin-top: 1rem;
+
+
+}
+
+
+
+
+.services .icon-box {
+    
+    text-align: center;
+    border: 1px solid #ebebeb;
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+  }
+  
+  .services .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #ffc451;
+    border-radius: 4px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  
+  .services .icon-box .icon i {
+    color: #151515;
+    font-size: 28px;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .services .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .services .icon-box h4 a {
+    color: #151515;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .services .icon-box h4 a:hover {
+    color: #ffc451;
+  }
+  
+  .services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .services .icon-box:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+  }
+
+
+
+
+
+
+
+
+
+.fast-booking{
+    background: url(images/secbg.png);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+}
+.fast-booking .fast-hading{
+    color: #ffc61a;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 2rem;
+}
+.fast-booking  h2{
+    font-size: 31px;
+    color: white;
+    text-align: center;
+}
+.inner-fast{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 3rem 7%;
+    align-items: center;
+}
+.booking-content{
+    flex: 1 1 45rem;
+}
+.booking-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.inner-fast-text h1{
+    font-size: 22px;
+    color: #ffc61a;
+    padding: 2rem;
+}
+.inner-fast-text p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.icon-fast{
+    background-color: #ffc61a;
+    width: 50px;
+    height: 40px;
+    border-radius: 150px;
+    text-align: center;
+}
+.icon-fast span i{
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+
+.testimonials{
+    background: url(images/testimonial\ back.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.testimonials .heading-test{
+    color: #ffc61a;
+    font-size: 38px;
+    padding: 2rem;
+    text-align: center;
+}
+.main-testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 2rem 7%;
+}
+.inner-test{
+    flex: 1 1 45rem;
+    color: white;
+    background: black;
+    padding: 2rem;
+}
+.inner-test p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.clients{
+    display: flex;
+    align-items: center;
+
+}
+.clients h1{
+    color: #ffc61a;
+    margin-left: 1rem;
+}
+
+
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .info i {
+  font-size: 20px;
+  background: #ffc451;
+  color: #151515;
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #151515;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #484848;
+}
+
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #ffc451;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #ffc451;
+  border: 0;
+  padding: 10px 24px;
+  color: #151515;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #ffcd6b;
+}
+  
+element.style {
+    z-index: 3;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    touch-action: pan-x pan-y;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+    #menu-bars{
+        display: initial;
+    
+    }
+    .navbar{
+        position: absolute;
+        top: -100%;
+        right: 0;
+        left: 0;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        background: #ffc61a;
+        margin: 1rem;
+        padding: 1rem;
+
+    }
+    .header{
+        padding: 2rem;
+    }
+    .tarrif-container{
+        padding-bottom: 4rem;
+    }
+    .tarrif-container img{
+        width: 60%;
+        margin-top: 0px;
+    }
+    .background-text h2{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.contact-form{
+  width: 45rem;
+  background: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+}
+
+.contact-form-heading{
+  text-align: center;
+  background: black;
+  padding: 2rem 0;
+}
+.contact-form-heading h1{
+  color: white;
+}
+
+.contact-form-fields input{
+  padding: 2rem ;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.contact-form a{
+  background: black;
+  width: 100%;
+  display: inline-block;
+  padding: 2rem 0;
+  color: white;
+  font-size: 1.5rem;
+  
+}
+.submit{
+  padding-top: 2rem;
+}

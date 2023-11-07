@@ -1,0 +1,23 @@
+body{
+    
+    background:url("/images/secbg.png");
+    color:white; 
+    /* text-align:center; */
+    
+}
+.container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:600px;
+}
+ .container .form button{
+    border-radius:5px;
+    background-color:#ffc61a;
+    height:30px;
+}
+ .container .form button:hover{
+    cursor:pointer;
+    border:6px solid rgb(169, 71, 10);
+}

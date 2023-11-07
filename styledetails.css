@@ -1,0 +1,56 @@
+
+body{
+    background:url("/images/secbg.png");
+    /* display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+     */
+    height:100vh;
+    color:white
+}
+
+
+#form2{
+    display:flex;
+    flex-direction: column;
+    width:300px;
+    background-color:black;
+   /* margin-right:auto; */
+   border-radius:30px;
+   
+   position:fixed;
+   margin:auto;
+   
+   left: 567px;
+    top: 251px;
+   
+}
+
+.ele{
+     border-style:hidden;
+    margin:10px;
+    height:30px;
+    border:5px solid blue;
+    border-radius:20px;
+   
+}
+
+.circle{
+    width:200px;
+    height:200px;
+    background-color:#ffc61a;
+    border-radius:50%;
+    /* margin-left:auto; */
+    position:absolute;
+    z-index:-1;
+    left: 450px;
+    top: 155px;
+    
+}
+
+.form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
